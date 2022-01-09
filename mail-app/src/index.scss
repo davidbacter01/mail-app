@@ -5,7 +5,15 @@ $base-accent: #090d26;
 $primary-color: #076ae0;
 $danger-color: #ff4d58;
 $info-color: #fcd26f;
-$success-color: #73ff73;
+$success-color: #538a53;
+$base-box-shadow:  0 0 10px rgba(0, 0, 0, 0.4);
+
+//soft reset
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -17,11 +25,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -30,18 +33,30 @@ code {
 //buttons
 .button {
   border: 1px solid $base-accent;
-  border-radius: 8px;
+  border-radius: 5px;
   padding: 5px 10px;
+  margin: 0 5px;
   &-info{
-    color: $base-bg;
+    color: $base-accent;
     background-color: $info-color;
+    border: none;
   }
   &-danger {
     color: $base-bg;
     background-color: $danger-color;
+    border: none;
   }
   &-success {
     color: $base-bg;
     background-color: $success-color;
+    border: none;
+  }
+  &-primary {
+    color: $base-bg;
+    background-color: $primary-color;
+    border: none;
+  }
+  &:hover {
+    box-shadow: $base-box-shadow;
   }
 }

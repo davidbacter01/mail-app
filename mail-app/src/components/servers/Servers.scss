@@ -1,0 +1,26 @@
+@import "../../index";
+
+.servers-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.add-server-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.left {
+  display: block;
+  text-align: left;
+}
+
+.add-server {
+  //border-radius: 5px;
+  background-color: $base-bg;
+}
