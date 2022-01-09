@@ -1,0 +1,29 @@
+@import "../../index.scss";
+
+$nav-height: 80px;
+.nav-bar {
+  height: $nav-height;
+  background-color: $base-accent;
+}
+.Navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    max-height: $nav-height;
+    img {
+      max-height: $nav-height +20px;
+    }
+  }
+  .Navigation-links {
+    display: flex;
+    list-style: none;
+    li {
+      margin: 0 20px;
+    }
+    a {
+      color: $base-bg;
+      text-decoration: inherit; /* no underline */
+    }
+  }
+}

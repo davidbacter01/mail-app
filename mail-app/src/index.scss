@@ -1,5 +1,15 @@
+//color variables
+$base-color: #076ae0;
+$base-bg: #FFFFFF;
+$base-accent: #090d26;
+$primary-color: #076ae0;
+$danger-color: #ff4d58;
+$info-color: #fcd26f;
+$success-color: #73ff73;
+
 body {
   margin: 0;
+  color: $base-accent;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +20,28 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+//buttons
+.button {
+  border: 1px solid $base-accent;
+  border-radius: 8px;
+  padding: 5px 10px;
+  &-info{
+    color: $base-bg;
+    background-color: $info-color;
+  }
+  &-danger {
+    color: $base-bg;
+    background-color: $danger-color;
+  }
+  &-success {
+    color: $base-bg;
+    background-color: $success-color;
+  }
 }

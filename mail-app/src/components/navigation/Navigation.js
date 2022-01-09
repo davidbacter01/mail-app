@@ -1,16 +1,22 @@
 import './Navigation.scss';
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
 function Navigation({urls}) {
     return (
-        <nav className="Navigation">
-            <div className={"logo"}></div>
-            <ul className="Navigation-links">
-                {
-                    urls.map(link => <a key={link.name} href={link.to}>{link.name}</a>)
-                }
-            </ul>
-        </nav>
+        <div className={"nav-bar"}>
+            <nav className="Navigation container">
+                <div className={"logo"}>
+                    <img src={"/logos/App-logos_transparent.png"} alt={"logo"}/>
+                </div>
+                <ul className="Navigation-links">
+                    {
+                        urls.map(link =><li key={link.name}>
+                            <a href={link.to}>{link.name}</a>
+                        </li>)
+                    }
+                </ul>
+            </nav>
+        </div>
     );
 }
 
